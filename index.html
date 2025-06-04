@@ -120,8 +120,41 @@
             padding: 20px;
             margin-top: 50px;
         }
-
-        /* 移动端适配样式 */
+        .circular-text-container {
+            position: fixed;
+            right: 30px;
+            bottom: 30px;
+            width: 150px;
+            height: 150px;
+            z-index: 999;
+        }
+        .circular-text {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: rgba(192, 57, 43, 0.9);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            animation: rotate 20s linear infinite;
+        }
+        .circular-text span {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform-origin: 0 75px;
+            color: white;
+            font-size: 14px;
+            white-space: nowrap;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
         @media screen and (max-width: 768px) {
             .header {
                 padding: 10px 0;
@@ -191,6 +224,204 @@
             .shop-link:hover {
                 text-decoration: underline;
             }
+            .circular-text-container {
+                width: 120px;
+                height: 120px;
+                right: 20px;
+                bottom: 20px;
+            }
+            .circular-text span {
+                transform-origin: 0 60px;
+                font-size: 12px;
+            }
+        }
+        .curved-carousel {
+            position: relative;
+            width: 100%;
+            height: 80px;
+            background: linear-gradient(180deg, rgba(192, 57, 43, 0.95) 0%, rgba(192, 57, 43, 0.8) 100%);
+            margin-top: 60px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .carousel-track {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+        }
+        .carousel-item {
+            position: absolute;
+            width: 300px;
+            text-align: center;
+            color: white;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            transition: all 0.3s ease;
+            transform-origin: center center;
+            cursor: pointer;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+            white-space: nowrap;
+        }
+        .carousel-item:hover {
+            transform: scale(1.1) translateY(-5px);
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        @keyframes carousel {
+            0% {
+                transform: translateX(100%) scale(0.8);
+                opacity: 0;
+            }
+            10% {
+                transform: translateX(50%) scale(1);
+                opacity: 1;
+            }
+            90% {
+                transform: translateX(-50%) scale(1);
+                opacity: 1;
+            }
+            100% {
+                transform: translateX(-100%) scale(0.8);
+                opacity: 0;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .curved-carousel {
+                height: 60px;
+                margin-top: 50px;
+            }
+            .carousel-item {
+                width: 250px;
+                font-size: 16px;
+                padding: 8px 15px;
+            }
+        }
+        .curved-text-flow {
+            position: relative;
+            width: 100%;
+            height: 120px;
+            background: linear-gradient(180deg, rgba(192, 57, 43, 0.95) 0%, rgba(192, 57, 43, 0.8) 100%);
+            margin-top: 60px;
+            overflow: hidden;
+            perspective: 1000px;
+            transform-style: preserve-3d;
+        }
+        .text-container {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            animation: rotate 20s linear infinite;
+        }
+        .text-item {
+            position: absolute;
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+            white-space: nowrap;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            transform-origin: center center;
+            animation: scale 2s ease-in-out infinite;
+            animation-delay: calc(var(--delay) * 1s);
+        }
+        .text-item:hover {
+            transform: scale(1.2) translateZ(20px);
+            color: #ffd700;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
+        @keyframes rotate {
+            from {
+                transform: rotateY(0deg);
+            }
+            to {
+                transform: rotateY(360deg);
+            }
+        }
+        @keyframes scale {
+            0%, 100% {
+                transform: scale(1) translateZ(0);
+            }
+            50% {
+                transform: scale(1.1) translateZ(10px);
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .curved-text-flow {
+                height: 100px;
+                margin-top: 50px;
+            }
+        }
+        .waterfall-container {
+            position: relative;
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(90deg, rgba(192, 57, 43, 0.8) 0%, rgba(192, 57, 43, 0.6) 100%);
+            margin-top: 60px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 0 20px;
+        }
+        .waterfall-text {
+            position: absolute;
+            color: white;
+            font-size: 16px;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 25px;
+            white-space: nowrap;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+            animation: scroll linear infinite;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            margin: 0 10px;
+        }
+        .waterfall-text:hover {
+            transform: scale(1.2) translateY(-2px);
+            background: rgba(255, 255, 255, 0.25);
+            color: #1e90ff;
+            box-shadow: 0 5px 20px rgba(30, 144, 255, 0.4);
+            animation-play-state: paused;
+            border-color: rgba(30, 144, 255, 0.4);
+        }
+        @keyframes scroll {
+            0% {
+                transform: translateX(100vw);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .waterfall-container {
+                height: 80px;
+                margin-top: 50px;
+            }
+            .waterfall-text {
+                font-size: 14px;
+                padding: 8px 16px;
+                border-radius: 20px;
+            }
+            .waterfall-text:hover {
+                transform: scale(1.15) translateY(-2px);
+            }
         }
     </style>
 </head>
@@ -208,6 +439,8 @@
             </div>
         </nav>
     </header>
+
+    <div class="waterfall-container" id="waterfallContainer"></div>
 
     <main class="main">
         <section id="about" class="section">
@@ -284,6 +517,111 @@
                 document.querySelector('.nav-links').classList.remove('active');
             });
         });
+
+        // 文字横向滚动效果
+        const texts = [
+            { text: '✨ 黄金如何鉴别', link: 'gold-guide.html' },
+            { text: '💎 3D硬金为啥有个小孔', link: 'gold-3d.html' },
+            { text: '🌟 今日实时金价', link: 'https://i.jzj9999.com/quoteh5/', target: '_blank' },
+            { text: '💫 黄金首饰保养指南', link: 'gold-care.html' },
+            { text: '💎 足金999、足金9999区别', link: 'gold-craft.html' }
+        ];
+
+        const container = document.getElementById('waterfallContainer');
+        const containerHeight = container.offsetHeight;
+        const occupiedPositions = new Set();
+        const minSpacing = 50; // 增加最小垂直间距
+        const maxActiveElements = 4; // 减少同时显示的元素数量
+        let activeElements = 0;
+
+        function isPositionOccupied(top) {
+            for (let pos of occupiedPositions) {
+                if (Math.abs(pos - top) < minSpacing) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        function findAvailablePosition() {
+            const maxAttempts = 15; // 增加尝试次数
+            const margin = 20; // 上下边距
+            for (let i = 0; i < maxAttempts; i++) {
+                const top = margin + Math.random() * (containerHeight - 2 * margin - 40);
+                if (!isPositionOccupied(top)) {
+                    occupiedPositions.add(top);
+                    return top;
+                }
+            }
+            return margin + Math.random() * (containerHeight - 2 * margin - 40);
+        }
+
+        function cleanupElement(element) {
+            occupiedPositions.delete(parseFloat(element.style.top));
+            element.remove();
+            activeElements--;
+        }
+
+        function createTextElement() {
+            if (activeElements >= maxActiveElements) {
+                return;
+            }
+
+            const text = texts[Math.floor(Math.random() * texts.length)];
+            const element = document.createElement('div');
+            element.className = 'waterfall-text';
+            element.textContent = text.text;
+            element.setAttribute('data-link', text.link);
+            
+            const top = findAvailablePosition();
+            element.style.top = `${top}px`;
+            
+            const duration = 15 + Math.random() * 5;
+            element.style.animationDuration = `${duration}s`;
+            
+            element.addEventListener('click', () => {
+                if (text.target === '_blank') {
+                    window.open(text.link, '_blank');
+                } else {
+                    window.location.href = text.link;
+                }
+            });
+            
+            container.appendChild(element);
+            activeElements++;
+
+            // 动画结束后清理元素
+            element.addEventListener('animationend', () => {
+                cleanupElement(element);
+            });
+
+            // 设置超时清理，防止动画未正常结束
+            setTimeout(() => {
+                if (element.parentNode === container) {
+                    cleanupElement(element);
+                }
+            }, (duration + 1) * 1000);
+        }
+
+        // 定期创建新的文字元素
+        setInterval(createTextElement, 2000);
+
+        // 初始化创建文字
+        for (let i = 0; i < maxActiveElements; i++) {
+            setTimeout(createTextElement, i * 1000);
+        }
+
+        // 定期检查并清理可能卡住的元素
+        setInterval(() => {
+            const elements = container.querySelectorAll('.waterfall-text');
+            if (elements.length > maxActiveElements) {
+                elements.forEach((element, index) => {
+                    if (index >= maxActiveElements) {
+                        cleanupElement(element);
+                    }
+                });
+            }
+        }, 5000);
     </script>
 </body>
 </html> 
