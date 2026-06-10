@@ -3,340 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>黄金如何鉴别 | 洪浪珠宝官网解答</title>
-    <meta name="description" content="洪浪珠宝官网解答：黄金如何鉴别。围绕成色标识、购买渠道、凭证和专业检测说明普通消费者应关注的判断方式。">
+    <title>黄金如何鉴别 - 洪浪珠宝</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700&family=Source+Sans+3:wght@400;500;600;700&display=swap');
-
-        :root {
-            --surface: rgba(255, 250, 243, 0.92);
-            --text: #2b241d;
-            --muted: #6d5c49;
-            --accent: #8e3b1f;
-            --gold: #d2a647;
-            --shadow: 0 24px 60px rgba(55, 39, 23, 0.12);
-            --radius-xl: 28px;
-            --radius-lg: 20px;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-
         body {
-            font-family: 'Source Sans 3', sans-serif;
-            color: var(--text);
-            line-height: 1.72;
-            background:
-                radial-gradient(circle at top left, rgba(210, 166, 71, 0.18), transparent 24%),
-                linear-gradient(180deg, #f6efe6 0%, #f0e5d8 100%);
+            font-family: 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f8f8;
         }
-
-        a { color: inherit; text-decoration: none; }
-        .shell { width: min(980px, calc(100% - 32px)); margin: 0 auto; }
-
-        .site-header {
-            position: sticky;
+        .header {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
             top: 0;
-            z-index: 10;
-            background: rgba(246, 239, 230, 0.86);
-            backdrop-filter: blur(14px);
-            border-bottom: 1px solid rgba(103, 77, 43, 0.08);
+            z-index: 1000;
         }
-
-        .header-inner {
-            min-height: 76px;
+        .nav {
+            max-width: 1200px;
+            margin: 0 auto;
             display: flex;
-            align-items: center;
             justify-content: space-between;
-            gap: 18px;
-        }
-
-        .brand {
-            display: flex;
             align-items: center;
-            gap: 12px;
+            padding: 0 20px;
         }
-
-        .brand-badge {
-            width: 42px;
-            height: 42px;
-            border-radius: 50%;
-            display: grid;
-            place-items: center;
-            background: linear-gradient(135deg, var(--accent), var(--gold));
-            color: #fff;
-            font-family: 'Noto Serif SC', serif;
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #c0392b;
+        }
+        .main {
+            max-width: 800px;
+            margin: 100px auto 0;
+            padding: 20px;
+        }
+        .article {
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .article h1 {
+            color: #c0392b;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+        .article h2 {
+            color: #c0392b;
+            margin: 30px 0 15px;
+            font-size: 22px;
+        }
+        .article p {
+            margin-bottom: 15px;
+            text-align: justify;
             font-size: 16px;
         }
-
-        .brand strong, h1, h2, h3 {
-            font-family: 'Noto Serif SC', serif;
-        }
-
-        .brand strong { display: block; font-size: 20px; }
-        .brand span { display: block; color: var(--muted); font-size: 14px; }
-        .header-link { color: var(--accent); font-weight: 700; }
-
-        main { padding: 34px 0 64px; }
-
-        .hero,
-        .article,
-        .related,
-        .contact {
-            border-radius: var(--radius-xl);
-            background: var(--surface);
-            border: 1px solid rgba(255, 255, 255, 0.72);
-            box-shadow: var(--shadow);
-        }
-
-        .hero {
-            display: grid;
-            grid-template-columns: minmax(0, 1.05fr) minmax(260px, 0.95fr);
-            gap: 24px;
-            align-items: center;
-            padding: 32px;
-        }
-
-        .hero-copy span {
-            display: inline-flex;
-            min-height: 36px;
-            padding: 0 14px;
-            border-radius: 999px;
-            align-items: center;
-            background: rgba(210, 166, 71, 0.12);
-            color: #6b4b17;
-            font-weight: 700;
-        }
-
-        .hero-copy h1 {
-            margin-top: 18px;
-            font-size: clamp(2rem, 4vw, 3.2rem);
-            line-height: 1.16;
-        }
-
-        .hero-copy p {
-            margin-top: 16px;
-            color: var(--muted);
-            font-size: 1.05rem;
-        }
-
-        .hero-visual {
-            border-radius: 22px;
-            overflow: hidden;
-            background: linear-gradient(180deg, rgba(255, 251, 246, 0.94), rgba(246, 235, 220, 0.94));
-            padding: 20px;
-        }
-
-        .hero-visual img {
-            width: 100%;
-            aspect-ratio: 1 / 1;
-            object-fit: contain;
-        }
-
-        .article { margin-top: 22px; padding: 32px; }
-        .lead {
-            padding: 18px 20px;
-            border-radius: var(--radius-lg);
-            background: rgba(210, 166, 71, 0.12);
-            color: #5b4520;
-            border: 1px solid rgba(210, 166, 71, 0.18);
-            font-weight: 700;
-        }
-
-        .article section + section { margin-top: 28px; }
-        .article h2 { font-size: 1.46rem; margin-bottom: 12px; }
-        .article p + p { margin-top: 12px; }
         .article ul {
-            margin-top: 14px;
-            display: grid;
-            gap: 12px;
-            padding-left: 22px;
-            color: var(--muted);
+            margin: 15px 0;
+            padding-left: 20px;
         }
-
-        .article li strong { color: var(--text); }
-
-        .related,
-        .contact { margin-top: 22px; padding: 26px; }
-
-        .related-grid {
-            margin-top: 16px;
-            display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 16px;
+        .article li {
+            margin-bottom: 10px;
         }
-
-        .related-card {
-            padding: 20px;
-            border-radius: 18px;
-            background: rgba(255, 255, 255, 0.58);
-            border: 1px solid rgba(103, 77, 43, 0.1);
-        }
-
-        .related-card strong { display: block; margin-bottom: 8px; }
-        .related-card p { color: var(--muted); }
-        .related-card a {
+        .back-link {
             display: inline-block;
-            margin-top: 12px;
-            color: var(--accent);
-            font-weight: 700;
+            margin-top: 20px;
+            color: #c0392b;
+            text-decoration: none;
+            font-weight: bold;
         }
-
-        .contact p { color: var(--muted); }
-        .contact-actions {
-            margin-top: 16px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
+        .back-link:hover {
+            text-decoration: underline;
         }
-
-        .button {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 46px;
-            padding: 0 18px;
-            border-radius: 999px;
-            font-weight: 700;
+        .footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
         }
-
-        .button-primary {
-            background: linear-gradient(135deg, var(--gold), #dbb461);
-            color: #3d2a11;
+        .footer a {
+            color: #fff;
+            text-decoration: underline;
         }
-
-        .button-secondary {
-            background: rgba(142, 59, 31, 0.08);
-            color: var(--accent);
-        }
-
-        .site-footer { padding: 0 0 38px; color: var(--muted); }
-        .footer-inner { width: min(980px, calc(100% - 32px)); margin: 0 auto; padding-top: 22px; border-top: 1px solid rgba(103, 77, 43, 0.12); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 14px; }
-        .footer-inner a { color: var(--muted); text-decoration: underline; text-underline-offset: 3px; }
-        .footer-inner a:hover { color: var(--accent); }
-
-        @media (max-width: 820px) {
-            .hero,
-            .related-grid { grid-template-columns: 1fr; }
-            .hero,
-            .article,
-            .related,
-            .contact { padding: 24px; }
+        @media screen and (max-width: 768px) {
+            .main {
+                margin-top: 80px;
+                padding: 15px;
+            }
+            .article {
+                padding: 20px;
+            }
+            .article h1 {
+                font-size: 24px;
+            }
+            .article h2 {
+                font-size: 20px;
+            }
+            .article p {
+                font-size: 15px;
+            }
         }
     </style>
 </head>
 <body>
-    <header class="site-header">
-        <div class="shell header-inner">
-            <a class="brand" href="index.html">
-                <span class="brand-badge">洪浪</span>
-                <span>
-                    <strong>洪浪珠宝</strong>
-                    <span>黄金消费者常见问题官网</span>
-                </span>
-            </a>
-            <a class="header-link" href="index.html">返回首页</a>
-        </div>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">洪浪珠宝</div>
+        </nav>
     </header>
 
-    <main>
-        <div class="shell">
-            <section class="hero">
-                <div class="hero-copy">
-                    <span>官网解答 / 黄金鉴别</span>
-                    <h1>黄金如何鉴别？</h1>
-                    <p>黄金鉴别应优先基于成色标识、购买渠道、凭证信息和专业检测结果。普通消费者购买时，不建议仅凭颜色、重量或简单试验方法判断。</p>
-                </div>
-                <div class="hero-visual">
-                    <img src="img/gold-guide.svg" alt="黄金鉴别相关视觉图">
-                </div>
-            </section>
+    <main class="main">
+        <article class="article">
+            <h1>黄金如何鉴别：专业指南</h1>
+            
+            <p>黄金作为一种贵金属，其真伪鉴别对于消费者来说至关重要。本文将详细介绍几种常用的黄金鉴别方法，帮助您在购买黄金时做出明智的选择。</p>
 
-            <article class="article">
-                <div class="lead">简要结论：黄金鉴别最稳妥的方式，是先确认购买渠道与成色信息，再结合凭证与专业检测，不建议依赖单一外观判断。</div>
+            <h2>1. 外观特征鉴别</h2>
+            <ul>
+                <li>颜色：真金呈现明亮的金黄色，色泽均匀</li>
+                <li>光泽：真金具有特殊的金属光泽，不会出现暗淡或发白</li>
+                <li>印记：正规金饰都会有清晰的成色印记（如足金999、足金9999等）</li>
+            </ul>
 
-                <section>
-                    <h2>1. 先看成色标识和购买凭证</h2>
-                    <p>购买黄金饰品时，应先确认是否有清晰的成色信息，例如足金999、足金9999等标识，并查看对应标签、票据或其他可追溯信息。</p>
-                    <ul>
-                        <li><strong>成色标识应清晰：</strong>标识缺失、模糊或表达异常时，需要提高警惕。</li>
-                        <li><strong>凭证信息应完整：</strong>发票、标签和购买记录是后续确认与售后的基础。</li>
-                        <li><strong>先确认来源：</strong>来源可追溯，比单看外观更重要。</li>
-                    </ul>
-                </section>
+            <h2>2. 物理特性鉴别</h2>
+            <ul>
+                <li>密度：黄金密度大，手感沉甸</li>
+                <li>硬度：黄金较软，可以用指甲划出痕迹</li>
+                <li>延展性：真金具有良好的延展性，可以拉成细丝</li>
+            </ul>
 
-                <section>
-                    <h2>2. 颜色和手感只能作辅助参考</h2>
-                    <p>黄金通常具有稳定的金黄色光泽和一定重量感，但颜色和手感受工艺、表面处理和拍摄环境影响较大，不能单独作为判定依据。</p>
-                    <ul>
-                        <li><strong>颜色并非唯一标准：</strong>同类产品在不同光线下外观可能存在差异。</li>
-                        <li><strong>重量感具有参考性：</strong>但并不能替代成分判断。</li>
-                        <li><strong>外观正常不等于一定可靠：</strong>仍需结合渠道和凭证综合判断。</li>
-                    </ul>
-                </section>
+            <h2>3. 专业检测方法</h2>
+            <ul>
+                <li>X射线荧光光谱仪检测</li>
+                <li>密度测试</li>
+                <li>化学试剂检测</li>
+            </ul>
 
-                <section>
-                    <h2>3. 普通消费者不建议自行做破坏性测试</h2>
-                    <p>网络上常见的刮擦、弯折、火烧等方式，可能直接损伤首饰，不适合作为普通消费者的常规判断方法。</p>
-                    <ul>
-                        <li><strong>自行测试存在损伤风险：</strong>尤其是对首饰表面和结构影响较大。</li>
-                        <li><strong>高纯度黄金材质较软：</strong>这属于材料特性，不应被简单误解。</li>
-                        <li><strong>问题应交给专业方法处理：</strong>不要把简单试验作为最终结论。</li>
-                    </ul>
-                </section>
+            <h2>4. 购买建议</h2>
+            <p>1. 选择正规渠道购买，如品牌金店、银行等</p>
+            <p>2. 索要正规发票和鉴定证书</p>
+            <p>3. 注意查看产品标识和成色印记</p>
+            <p>4. 保留购买凭证，以便后续维权</p>
 
-                <section>
-                    <h2>4. 有疑问时应以专业检测为准</h2>
-                    <p>对于金额较高、来源不明或个人无法确认的产品，应优先采用专业检测手段判断成分情况。</p>
-                    <ul>
-                        <li><strong>X射线荧光检测：</strong>适合更专业的成分分析。</li>
-                        <li><strong>密度测试：</strong>可作为辅助判断方式。</li>
-                        <li><strong>正规门店或机构检测：</strong>比自行尝试更稳妥。</li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h2>5. 实际购买时的判断顺序</h2>
-                    <p>建议先确认渠道是否正规，再确认成色与凭证是否完整，最后再比较工艺、价格与售后条件。顺序正确，通常比单独研究外观更有效。</p>
-                </section>
-            </article>
-
-            <section class="related">
-                <h3>相关问题</h3>
-                <div class="related-grid">
-                    <article class="related-card">
-                        <strong>足金999和9999有什么区别？</strong>
-                        <p>查看纯度差异在实际首饰购买中的意义。</p>
-                        <a href="gold-craft.html">查看解答</a>
-                    </article>
-                    <article class="related-card">
-                        <strong>3D硬金为什么会有小孔？</strong>
-                        <p>了解工艺特征与异常情况的区别。</p>
-                        <a href="gold-3d.html">查看解答</a>
-                    </article>
-                    <article class="related-card">
-                        <strong>黄金首饰日常如何保养？</strong>
-                        <p>查看佩戴、清洁和存放要点。</p>
-                        <a href="gold-care.html">查看解答</a>
-                    </article>
-                </div>
-            </section>
-
-            <section class="contact">
-                <h3>门店联系</h3>
-                <p>如需进一步确认款式、工费、周期或售后事项，可直接联系门店。</p>
-                <div class="contact-actions">
-                    <a class="button button-primary" href="index.html#contact">查看联系方式</a>
-                    <a class="button button-secondary" href="tel:15695406000">拨打电话</a>
-                </div>
-            </section>
-        </div>
+            <a href="index.html" class="back-link">← 返回首页</a>
+        </article>
     </main>
-    <footer class="site-footer">
-        <div class="footer-inner">
-            <span>© 2026 洪浪珠宝</span>
-            <span>深圳水贝 · 黄金消费者常见问题官网</span>
-            <a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer">粤ICP备2026074313号-1</a>
-        </div>
+    <footer class="footer">
+        <p>© 2025 洪浪珠宝 版权所有</p>
+        <p><a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer">粤ICP备2026074313号-1</a></p>
     </footer>
 </body>
 </html>
